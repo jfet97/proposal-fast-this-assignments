@@ -120,9 +120,9 @@ F(obj.par1, obj.par2, obj2.parN) {}
 ```
 that is equivalent to:
 ```js
-F(par1, par2, ..., parN) {
-  let obj = { par1, par2 };
-  let obj2 = { parN };
+F(par1, par2, parN) {
+  let or const obj = { par1, par2 };
+  let or const obj2 = { parN };
 }
 ```
 

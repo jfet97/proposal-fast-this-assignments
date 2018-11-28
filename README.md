@@ -33,7 +33,7 @@ class Person {
   }
 }
 ```
-
+This is not DRY.
 
 ## What?
 The proposal is simple: why do not speed up this situation?

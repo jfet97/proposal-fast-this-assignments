@@ -42,7 +42,7 @@ The proposal is simple: why do not speed up this situation removing the avoidabl
 
 
 ## How?
-My suggestion is to do so directly in the parameters definition using a simple dot `.`
+My suggestion is to do so directly in the parameters definition by prefixing a simple dot `.`
 ```js
 function Person(.firstName, .lastName, .age) {}
 ```

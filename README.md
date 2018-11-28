@@ -140,10 +140,10 @@ Clever one but there are always (theoretically) an "useless" object creation and
 
 ```js
 F( par1, par2 ) {
-  this = {...arguments};
+  Object.assign(this, arguments);
 }
 ```
-Nice! But there is an "useless" object creation also here. And _arguments_ is deprecated in strict mode. Furthermore, I don't like reassign __this__ like that.
+Nice!No "useless" object creation also here. But _arguments_ is deprecated in strict mode.
 
 ### I don't like the dot
 Ok. We have not to use 96`.96`, only something easy and fast to write but not misunderstoodable.

@@ -66,8 +66,27 @@ F(.par1 = defaultValue, .par2) {
 ### destructured parameters
 I think there should not be problems:
 ```js
-F( [ .par1, .par2 ] ) {}
 F( { .par1, .par2 } ) {}
+```
+instead of
+```js
+F( { par1, par2 } ) {
+  this.par1 = par1;
+  this.par2 = par2;
+}
+```
+
+and
+
+```js
+F( [ .par1, .par2 ] ) {}
+```
+instead of
+```js
+F( [ par1, par2 ] ) {
+  this.par1 = par1;
+  this.par2 = par2;
+}
 ```
 
 ### rest operator

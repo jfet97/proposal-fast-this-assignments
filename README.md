@@ -118,4 +118,4 @@ F( par1, par2 ) {
   this = {...arguments};
 }
 ```
-Nice! But there is an "useless" object creation also here. And _arguments_ is deprecated.
+Nice! But there is an "useless" object creation also here. And _arguments_ is deprecated. Furthermore, I don't like reassign __this__ like that.

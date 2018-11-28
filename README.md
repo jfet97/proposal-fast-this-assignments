@@ -112,3 +112,10 @@ F( par1, par2 ) {
 }
 ```
 Clever one but there are always (theoretically) an "useless" object creation and a function call, as well as the repetition of the parameters.
+
+```js
+F( par1, par2 ) {
+  this = {...arguments};
+}
+```
+Nice! But there is an "useless" object creation also here. And _arguments_ is deprecated.

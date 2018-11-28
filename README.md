@@ -59,8 +59,7 @@ So, if a parameter starts with a dot it will be added to `this` **mantaining the
 ### default parameters
 Why not? 
 ```js
-F(.par1 = defaultValue, .par2) {
-}
+F(.par1 = defaultValue, .par2) {}
 ```
 
 ### destructured parameters

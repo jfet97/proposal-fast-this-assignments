@@ -143,8 +143,8 @@ F( par1, par2 ) {
   Object.assign(this, arguments);
 }
 ```
-Nice! No "useless" object creation also here. But _arguments_ is deprecated in strict mode.
+Nice! No "useless" object creation here. But _arguments_ is deprecated in strict mode.
 
 ### I don't like the dot
-Ok. We have not to use 96`.96`, only something easy and fast to write but not misunderstoodable.
+Ok. We have not to use `.`, only something easy and fast to write but not misunderstoodable.
 

@@ -36,7 +36,7 @@ class Person {
 This is not DRY.
 
 ## What?
-The proposal is simple: why do not speed up this situation?
+The proposal is simple: why do not speed up this situation removing the avoidable repetitions?
 
 
 ## How?

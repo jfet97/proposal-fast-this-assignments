@@ -103,5 +103,5 @@ F( .(...args) ) {}
 
 
 ## Notes
-If a class inherited from another, this sintax should be forbidden for the constructor method because `this` is not available before the `super()` call.
+If a class inherited from another, this syntax should be forbidden for the constructor method because `this` is not available before the `super()` call.
 

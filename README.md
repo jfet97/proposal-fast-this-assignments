@@ -107,20 +107,20 @@ We can go one step further: if not specified `this` could be the default object,
 
 So:
 ```js
-F(.par1, .par2, .parN) {}
+f(.par1, .par2, .parN) {}
 ```
 is equivalent to:
 ```js
-F(this.par1, this.par2, this.parN) {}
+f(this.par1, this.par2, this.parN) {}
 ```
 
 BUT you could also do something like:
 ```js
-F(obj.par1, obj.par2, obj2.parN) {}
+f(obj.par1, obj.par2, obj2.parN) {}
 ```
 that is equivalent to:
 ```js
-F(par1, par2, parN) {
+f(par1, par2, parN) {
   let or const obj = { par1, par2 };
   let or const obj2 = { parN };
 }

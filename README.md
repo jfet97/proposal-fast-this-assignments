@@ -102,6 +102,30 @@ F( .(...args) ) {}
 ```
 
 
+### further ideas
+We can go one step further: if not specified `this` could be the default object, but we could also choose to put the arguments on one or more object.
+
+So:
+```js
+F(.par1, .par2, ..., .parN) {}
+```
+is equivalent to:
+```js
+F(this.par1, this.par2, ..., this.parN) {}
+```
+
+BUT you could also do something like:
+```js
+F(obj.par1, obj.par2, ..., obj.parN) {}
+```
+that is equivalent to:
+```js
+F(par1, par2, ..., parN) {
+  let obj = { par1, par2, ..., parN};
+}
+```
+
+
 ## Notes
 If a class inherited from another, this syntax should be forbidden for the constructor method because `this` is not available before the `super()` call.
 
@@ -118,7 +142,7 @@ F( par1, par2 ) {
   this = {...arguments};
 }
 ```
-Nice! But there is an "useless" object creation also here. And _arguments_ is deprecated. Furthermore, I don't like reassign __this__ like that.
+Nice! But there is an "useless" object creation also here. And _arguments_ is deprecated in strict mode. Furthermore, I don't like reassign __this__ like that.
 
 ### I don't like the dot
 Ok. We have not to use 96`.96`, only something easy and fast to write but not misunderstoodable.

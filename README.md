@@ -5,7 +5,7 @@
 In costructor functions and in the constructor() method in ES6 classes is easily to fall in the following pattern:
 
 ```js
-f(par1, par2, ..., parN) {
+F(par1, par2, ..., parN) {
   this.par1 = par1;
   this.par2 = par2;
   ...
@@ -59,9 +59,30 @@ So, if a parameter starts with a dot it will be added to `this` **mantaining the
 ### default parameters
 Why not? 
 ```js
-f(.par1 = defaultValue, .par2) {
+F(.par1 = defaultValue, .par2) {
 }
 ```
+
+### destructured parameters
+I think there should not be problems:
+```js
+F( [ .par1, .par2 ] ) {}
+F( { .par1, .par2 } ) {}
+```
+
+### rest operator
+I am not sure here, I don't like four dots in row but in case we could trasform this:
+```js
+F( ...args ) {
+  this.args = args; // maybe useless but it is an edge case
+}
+```
+
+into:
+```js
+F( .(...args) ) {}
+```
+
 
 ## Notes
 If a class inherited from another, this sintax should be forbidden for the constructor method because `this` is not available before the `super()` call.

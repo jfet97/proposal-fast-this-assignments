@@ -105,3 +105,10 @@ F( .(...args) ) {}
 ## Notes
 If a class inherited from another, this syntax should be forbidden for the constructor method because `this` is not available before the `super()` call.
 
+### workarounds
+```js
+F( par1, par2 ) {
+  Object.assign(this, {par1, par2});
+}
+```
+Clever one but there are always (theoretically) an object creation and a function call, as well as the repetition of the parameters.

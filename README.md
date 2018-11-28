@@ -111,4 +111,4 @@ F( par1, par2 ) {
   Object.assign(this, {par1, par2});
 }
 ```
-Clever one but there are always (theoretically) an object creation and a function call, as well as the repetition of the parameters.
+Clever one but there are always (theoretically) an "useless" object creation and a function call, as well as the repetition of the parameters.

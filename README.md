@@ -1,5 +1,6 @@
 # Fast This Assignments
 
+
 ## Why?
 In costructor functions and in the constructor() method in ES6 classes is easily to fall in the following pattern:
 
@@ -35,6 +36,7 @@ class Person {
 ```
 This is not DRY.
 
+
 ## What?
 The proposal is simple: why do not speed up this situation removing the avoidable repetitions?
 
@@ -59,3 +61,8 @@ Why not?
 ```js
 f(.par1 = defaultValue, .par2) {
 }
+```
+
+## Notes
+If a class inherited from another, this sintax should be forbidden for the constructor method because `this` is not available before the `super()` call.
+

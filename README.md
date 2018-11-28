@@ -103,25 +103,26 @@ F( .(...args) ) {}
 
 
 ## Further ideas
-We can go one step further: if not specified `this` could be the default object, but we could also choose to put the arguments on one or more object.
+We can go one step further: if not specified `this` could be the default object, but we could also choose to put the arguments into one or more object.
 
 So:
 ```js
-F(.par1, .par2, ..., .parN) {}
+F(.par1, .par2, .parN) {}
 ```
 is equivalent to:
 ```js
-F(this.par1, this.par2, ..., this.parN) {}
+F(this.par1, this.par2, this.parN) {}
 ```
 
 BUT you could also do something like:
 ```js
-F(obj.par1, obj.par2, ..., obj.parN) {}
+F(obj.par1, obj.par2, obj2.parN) {}
 ```
 that is equivalent to:
 ```js
 F(par1, par2, ..., parN) {
-  let obj = { par1, par2, ..., parN};
+  let obj = { par1, par2 };
+  let obj2 = { parN };
 }
 ```
 

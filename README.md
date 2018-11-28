@@ -119,3 +119,7 @@ F( par1, par2 ) {
 }
 ```
 Nice! But there is an "useless" object creation also here. And _arguments_ is deprecated. Furthermore, I don't like reassign __this__ like that.
+
+### I don't like the dot
+Ok. We have not to use 96`.96`, only something easy and fast to write but not misunderstoodable.
+

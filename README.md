@@ -102,7 +102,7 @@ F( .(...args) ) {}
 ```
 
 
-### further ideas
+## Further ideas
 We can go one step further: if not specified `this` could be the default object, but we could also choose to put the arguments on one or more object.
 
 So:

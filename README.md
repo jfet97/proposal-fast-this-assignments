@@ -1,4 +1,4 @@
-# proposal-fast-this-assignments
+# Fast This Assignments
 
 ## Why?
 In costructor functions and in the constructor() method in ES6 classes is easily to fall in the following pattern:

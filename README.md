@@ -105,9 +105,9 @@ into:
 ```js
 F( .(...args) ) {}
 ```
-
-
-
+&nbsp;\
+&nbsp;\
+&nbsp;\
 ## Further ideas 
 We can go one step further: if not specified `this` could be the default object, but we could also choose to put the arguments into one or more objects.
 

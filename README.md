@@ -169,8 +169,8 @@ in this way:
 ```js
 f(obj.{par1, par2}, obj2.parN) {}
 ```
-\
-
+&nbsp;
+&nbsp;
 ## Notes
 If a class inherited from another, this syntax should be forbidden for the constructor method because `this` is not available before the `super()` call.
 

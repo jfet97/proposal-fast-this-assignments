@@ -133,7 +133,7 @@ f(par1, par2, parN) {
 ```
 
 ### going faster
-When or more than one parameters should be inserted into an object:
+When more than one parameters has to be inserted into an object:
 ```js
 f(obj.{par1, par2, parN}) {}
 ```

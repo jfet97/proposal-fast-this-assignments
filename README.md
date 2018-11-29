@@ -170,7 +170,7 @@ f(obj.{par1, par2}, obj2.parN) {}
 &nbsp;
 &nbsp;
 ## Notes
-If a class inherited from another, this syntax should be forbidden for the constructor method because `this` is not available before the `super()` call.
+If a class inherited from another, the lone dot syntax should be forbidden for the constructor method because `this` is not available before the `super()` call.
 
 
 ### workarounds
@@ -180,6 +180,14 @@ F( par1, par2 ) {
 }
 ```
 Clever one but there are always (theoretically) an "useless" object creation and a function call, as well as the repetition of the parameters.
+&nbsp;\
+```js
+f( par1, par2, par3 ) {
+  const obj = {par1, par2};
+  const obj2 = {par3};
+}
+```
+I'd like to avoid all repetitions.
 
 
 ### I don't like the dot

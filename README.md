@@ -141,8 +141,7 @@ equivalent to:
 ```js
 f(obj.par1, obj.par2, obj.parN) {}
 ```
-\
-\
+&nbsp;\
 So that:
 ```js
 f(.{par1, par2, parN}) {}
@@ -159,8 +158,7 @@ and:
 ```js
 f(this.par1, this.par2, this.parN) {}
 ```
-\
-\
+&nbsp;\
 SO we could write that:
 ```js
 f(obj.par1, obj.par2, obj2.parN) {}

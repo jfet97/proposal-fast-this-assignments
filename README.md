@@ -37,8 +37,10 @@ class Person {
 This is not DRY.
 
 
+
 ## What?
 The proposal is simple: why do not speed up this situation removing the avoidable repetitions?
+
 
 
 ## How?
@@ -56,11 +58,13 @@ class Person {
 ```
 So, if a parameter starts with a dot it will be added to `this` **mantaining the same name**.
 
+
 ### default parameters
 Why not? 
 ```js
 F(.par1 = defaultValue, .par2) {}
 ```
+
 
 ### destructured parameters
 I think there should not be problems:
@@ -88,6 +92,7 @@ F( [ par1, par2 ] ) {
 }
 ```
 
+
 ### rest operator
 I am not sure here, I don't like four dots in row but in case we could trasform this:
 ```js
@@ -100,6 +105,7 @@ into:
 ```js
 F( .(...args) ) {}
 ```
+
 
 
 ## Further ideas
@@ -127,8 +133,10 @@ f(par1, par2, parN) {
 ```
 
 
+
 ## Notes
 If a class inherited from another, this syntax should be forbidden for the constructor method because `this` is not available before the `super()` call.
+
 
 ### workarounds
 ```js
@@ -144,6 +152,7 @@ F( par1, par2 ) {
 }
 ```
 Nice! No "useless" object creation here. But there is a function call.
+
 
 ### I don't like the dot
 Ok. We have not to use `.`, only something easy and fast to write but not misunderstoodable.

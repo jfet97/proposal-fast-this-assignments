@@ -180,7 +180,9 @@ F( par1, par2 ) {
 }
 ```
 Clever one but there are always (theoretically) an "useless" object creation and a function call, as well as the repetition of the parameters.
+
 &nbsp;\
+
 ```js
 f( par1, par2, par3 ) {
   const obj = {par1, par2};

@@ -1,7 +1,7 @@
 # Fast This/Objects Assignments
 
 
-## Why?
+## Why? (initial idea)
 In costructor functions and in the constructor() method in ES6 classes is easily to fall in the following pattern:
 
 ```js
@@ -108,7 +108,7 @@ F( .(...args) ) {}
 
 
 
-## Further ideas
+## Further ideas 
 We can go one step further: if not specified `this` could be the default object, but we could also choose to put the arguments into one or more object.
 
 So:

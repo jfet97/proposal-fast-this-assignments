@@ -172,13 +172,6 @@ F( par1, par2 ) {
 ```
 Clever one but there are always (theoretically) an "useless" object creation and a function call, as well as the repetition of the parameters.
 
-```js
-F( par1, par2 ) {
-  Object.assign(this, arguments);
-}
-```
-Nice! No "useless" object creation here. But there is a function call.
-
 
 ### I don't like the dot
 Ok. We have not to use `.`, only something easy and fast to write but not misunderstoodable.

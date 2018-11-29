@@ -143,7 +143,7 @@ F( par1, par2 ) {
   Object.assign(this, arguments);
 }
 ```
-Nice! No "useless" object creation here. But _arguments_ is deprecated in strict mode. And there is the function call.
+Nice! No "useless" object creation here. But there is a function call.
 
 ### I don't like the dot
 Ok. We have not to use `.`, only something easy and fast to write but not misunderstoodable.

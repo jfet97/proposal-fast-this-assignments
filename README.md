@@ -191,7 +191,8 @@ f( par1, par2, par3 ) {
 ```
 I'd like to avoid all repetitions.
 
+&nbsp;
 
-### I don't like the dot
-Ok. We have not to use `.`, only something easy and fast to write but not misunderstoodable.
+### Mmmh...I don't like the dot
+Ok. We have not to use `.`. We need something easy and fast to write but not misunderstoodable.
 
